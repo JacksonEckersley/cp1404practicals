@@ -18,11 +18,18 @@ number_two = int(in_file.readline())
 number_sum = number_one + number_two
 print(number_sum)
 in_file.close()
+
 # Read all numbers from the file 'numbers.txt' and print the sum
 in_file = open("numbers.txt", 'r')
+num_sum = 0
 
-number_one = int(in_file.readline())
-number_two = int(in_file.readline())
-number_sum = number_one + number_two
-print(number_sum)
-in_file.close()
+for line in in_file:
+    num_read = int(line.strip())
+    num_sum = num_sum + num_read
+
+print(num_sum)
+
+
+
+
+
