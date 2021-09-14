@@ -19,7 +19,7 @@ def main():
 
 def get_name(email_in):
     name_1 = email_in.split('@')[0]
-    name_2= name_1.split('.')
+    name_2 = name_1.split('.')
     name = " ".join(name_2).title()
     return name
 
